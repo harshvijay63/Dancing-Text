@@ -1,0 +1,42 @@
+body {
+  background-color: #53d9d1;
+  background-image: linear-gradient(
+    135deg,
+    #53d9d1 0%,
+    #53d9d1 30%,
+    #f27b9b 30%,
+    #f27b9b 60%,
+    #eb7132 60%,
+    #eb7132
+  );
+  background-size: 280% 280%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  animation: move 10s linear infinite;
+}
+@keyframes move {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+p {
+  font-size: 13px;
+  line-height: 10px;
+  background: url("https://static.wixstatic.com/media/389726_4df1ca3802db4592862a33554653aa54.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  font-weight: 900;
+}
